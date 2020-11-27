@@ -27,6 +27,7 @@ new ModuleFederationPlugin({
 
 ### Plugin Setup Explained  (Container Component)
 ```js
+/* webpack.config.js */
 new ModuleFederationPlugin({
   name: 'container',
   remotes: {
@@ -38,8 +39,9 @@ new ModuleFederationPlugin({
 })
 ```
 
-### Module Federation Plugin Setup (Webpack) (Products Component)
+### Module Federation Plugin Setup (Products Component)
 ```js
+/* webpack.config.js */
 new ModuleFederationPlugin({
   name: 'products',
   filename: 'remoteEntry.js',
