@@ -14,8 +14,9 @@ https://martinfowler.com/articles/micro-frontends.html
 ### Examples
 Examples below are based on a scenario; a "container" component calls 2 additional micro-front-ends which are called "products", "cart"
 
-### Module Federation Plugin Setup (Webpack) (Container Component)
+### Module Federation Plugin Setup (Container Component)
 ```js
+/* webpack.config.js */
 new ModuleFederationPlugin({
   name: 'container',
   remotes: {
