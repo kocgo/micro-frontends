@@ -53,7 +53,7 @@ new ModuleFederationPlugin({
 ### Importing Exposed Modules (Container Component)
 If import statement does not match with regular modules, Webpack will look into "remotes" property in ModuleFederationPlugin configuration.
 ```js
-/* This will go and look into "remotes" property of ModuleFederationPlugin config
+/* This will go and look into "remotes" property of ModuleFederationPlugin config */
 import 'products/ProductsIndex';
 ```
 
