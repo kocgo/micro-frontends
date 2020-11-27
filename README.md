@@ -2,6 +2,7 @@
 
 ### Resources
 ```
+https://www.udemy.com/course/microfrontend-course/
 https://martinfowler.com/articles/micro-frontends.html
 ```
 
