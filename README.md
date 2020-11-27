@@ -1,4 +1,4 @@
-# Micro Frontends with React course notes
+# Micro Frontends with React
 
 ### Resources
 ```
