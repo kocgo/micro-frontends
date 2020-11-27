@@ -23,3 +23,9 @@ new ModuleFederationPlugin({
   },
 })
 ```
+
+### Module Federation Plugin (How it works)
+If any module import does not match, such as:
+```js
+import 'products/ProductsIndex';
+```
