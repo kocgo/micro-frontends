@@ -41,10 +41,10 @@ new ModuleFederationPlugin({
 ```js
 new ModuleFederationPlugin({
   name: 'products',
-  filename: 'remoteEntry.js'
+  filename: 'remoteEntry.js',
   exposes: {
     /* If anyone tries to access /ProductsIndex, we give them './src/index.js' */
-    '/ProductsIndex': './src/index'
+    "/ProductsIndex": "./src/index"
   },
 })
 ```
