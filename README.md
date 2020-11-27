@@ -24,7 +24,7 @@ new ModuleFederationPlugin({
 })
 ```
 
-### De-Composition of Plugin Setup  (Container Component)
+### Plugin Setup Explained  (Container Component)
 ```js
 new ModuleFederationPlugin({
   name: 'container',
