@@ -76,7 +76,7 @@ new ModuleFederationPlugin({
 ```
 Once you do that, components will stop working because these shared modules will be loaded after your components.
 
-Solution is 
+Solution is: 
 - create an additional file called "bootstrap.js" and put all your code in there.
 - to load your bootstrap.js asyncronously with import function.
 ```js
