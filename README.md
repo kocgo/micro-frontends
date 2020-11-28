@@ -90,3 +90,21 @@ let products = '';
 import("./bootstrap");
 ```
 
+### Versioning Shared Modules
+To make sure using one copy of a module (for example there can be only one React version in the browser):
+```
+/* products & cart webpack.config.js */
+new ModuleFederationPlugin({
+  name: 'products',
+  filename: 'remoteEntry.js',
+  exposes: {
+    /* If anyone tries to access /ProductsIndex, we give them './src/index.js' */
+    "/ProductsIndex": "./src/index"
+  },
+  shared: {
+    faker : {
+      singleton : true
+    }
+  }
+})
+```
