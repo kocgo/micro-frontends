@@ -60,3 +60,18 @@ If import statement does not match with regular modules, Webpack will look into 
 import 'products/ProductsIndex';
 ```
 
+### Sharing Modules
+Add "shared" property in the settings of all micro-front-ends.
+```js
+/* products & cart webpack.config.js */
+new ModuleFederationPlugin({
+  name: 'products',
+  filename: 'remoteEntry.js',
+  exposes: {
+    /* If anyone tries to access /ProductsIndex, we give them './src/index.js' */
+    "/ProductsIndex": "./src/index"
+  },
+  shared: ["faker"]
+})
+```
+Once you do that, components will stop working because these shared modules will be loaded after your components.
