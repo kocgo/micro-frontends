@@ -91,6 +91,18 @@ import("./bootstrap");
 ```
 
 ### Versioning Shared Modules
+If shared modules are have same "major!" versioning webpack will automatically pick only one of them.
+```
+products package.json
+
+faker : "^5.0.0"
+```
+```
+cart package.json
+
+faker : "^5.1.1"
+```
+
 To make sure using one copy of a module (for example there can be only one React version in the browser):
 ```js
 /* products & cart webpack.config.js */
