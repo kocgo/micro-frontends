@@ -92,7 +92,7 @@ import("./bootstrap");
 
 ### Versioning Shared Modules
 To make sure using one copy of a module (for example there can be only one React version in the browser):
-```
+```js
 /* products & cart webpack.config.js */
 new ModuleFederationPlugin({
   name: 'products',
