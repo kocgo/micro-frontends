@@ -13,3 +13,10 @@
 
 #### Inflexible Requirement 3
 - Styling from one project should never affect another
+
+#### Inflexible Requirement 4
+- Version control should not have any impact (monorepo or seperate)
+
+#### Inflexible Requirement 5
+- Container project should be able to use any version of the child projects.
+
